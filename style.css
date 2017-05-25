@@ -1,0 +1,35 @@
+body {
+  background-color: #1a237e; }
+  body h1 {
+    padding: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000; }
+  body .search {
+    max-width: 500px;
+    display: block;
+    margin: auto; }
+  body .rs {
+    padding: 15px; }
+    body .rs #rand-search {
+      display: block;
+      margin: auto; }
+  body .r-search {
+    padding: 30px; }
+  body #results {
+    padding-top: 30px; }
+    body #results .col-sm-6 {
+      margin-bottom: 15px; }
+    body #results a {
+      border: 1px solid #000;
+      margin: 15px; }
+      body #results a h3 {
+        color: #fff;
+        padding: 5px; }
+      body #results a .panel .panel-heading {
+        background-color: #2962ff;
+        padding: 5px; }
+      body #results a .panel .panel-body {
+        padding: 15px;
+        background-color: #e0e0e0; }
+
+/*# sourceMappingURL=style.css.map */

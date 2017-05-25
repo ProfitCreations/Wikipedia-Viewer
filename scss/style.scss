@@ -1,20 +1,63 @@
 body{
-  background-color: #ccc;
-  background-image: url(https://s23.postimg.org/63s1alz97/black_and_blue_material_design_wallpaper.png);
-  background-size: cover;
+  background-color: #1a237e;
   h1{
     padding: 15px;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
   }
+
+  .search{
+    max-width: 500px;
+    display: block;
+    margin: auto;
+  }
+
+.rs{
+  padding: 15px;
+
+  #rand-search{
+    display: block;
+    margin: auto;
+  }
+}
+
+
   .r-search{
     padding: 30px;
   }
-  .panel{
-    &:hover{
-      box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.75);
-      transition: .3s;
-      
+
+  #results{
+    padding-top: 30px;
+    .col-sm-6{
+      margin-bottom: 15px;
     }
+    a{
+      border: 1px solid #000;
+      margin: 15px;
+      h3{
+        color: #fff;
+        padding: 5px;
+      }
+      .panel{
+        // border-radius: 15px;
+        .panel-heading{
+          background-color: #2962ff;
+          padding: 5px;
+          // border-top-right-radius: 15px;
+          // border-top-left-radius: 15px;
+        }
+        .panel-body{
+          padding: 15px;
+          background-color: #e0e0e0;
+        }
+        // &:hover{
+        //   box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.75);
+        //   transition: .3s;
+        //
+        // }
+      }
+    }
+
   }
+
 }
