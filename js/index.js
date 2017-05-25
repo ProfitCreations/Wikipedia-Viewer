@@ -15,16 +15,15 @@ $(document).ready(function() {
     term = api + searchTerm[0].value;
     getWiki(term);
   });
+
   function getWiki(val) {
     $.ajax({
       method: "GET",
       url: val,
-      // jsonp: "callback",
       dataType: "jsonp",
       success: function(data) {
         for (var i = 0; i < data[1].length; i++) {
           $("#results").prepend(
-
               '<div class="col-sm-6">'
             +  '<div class="card">'
             +    '<div class="card-block">'
@@ -34,17 +33,10 @@ $(document).ready(function() {
             +    '</div>'
             +  '</div>'
             + '</div>'
-
-            /* '<a href="' +
-              data[3][i] +
-              '" target="_blank"><div class="col-xs-12 center-block"><div class="panel"><div class="panel-heading"><h3 class="panel-title">' +
-              data[1][i] +
-              '</h3></div><div class="panel-body">' +
-              data[2][i] +
-              "</div></div></div></a>" */
           );
         }
       }
     });
   }
+
 });
